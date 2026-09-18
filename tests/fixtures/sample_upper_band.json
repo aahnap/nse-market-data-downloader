@@ -1,0 +1,6 @@
+{
+  "data": [
+    {"symbol": "SUZLON", "series": "EQ", "band": "5%", "ltp": "62.35"},
+    {"symbol": "YESBANK", "series": "EQ", "band": "10%", "ltp": "24.10"}
+  ]
+}

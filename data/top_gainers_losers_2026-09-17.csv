@@ -1,0 +1,4 @@
+symbol,series,ltp,netPrice,tradeQuantity,category
+TCS,EQ,3950.50,2.35,125000,GAINER
+INFY,EQ,1820.10,1.85,98000,GAINER
+WIPRO,EQ,450.20,-1.95,67000,LOSER

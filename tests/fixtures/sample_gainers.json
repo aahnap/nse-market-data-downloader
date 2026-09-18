@@ -1,0 +1,8 @@
+{
+  "NIFTY": {
+    "data": [
+      {"symbol": "TCS", "series": "EQ", "ltp": "3950.50", "netPrice": "2.35", "tradeQuantity": "125000"},
+      {"symbol": "INFY", "series": "EQ", "ltp": "1820.10", "netPrice": "1.85", "tradeQuantity": "98000"}
+    ]
+  }
+}
