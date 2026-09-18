@@ -1,6 +1,6 @@
 # NSE Market Data Downloader
 
-![Tests](https://github.com/<your-username>/<your-repo>/actions/workflows/tests.yml/badge.svg)
+![Tests](https://github.com/aahnap/nse-market-data-downloader/actions/workflows/tests.yml/badge.svg)
 
 An automated command-line tool that downloads four NSE market-data
 datasets and saves each one as a dated CSV file, without any manual
@@ -146,8 +146,8 @@ CSVs are written to `data/` (configurable via `--output-dir`) as:
 ```
 
 e.g. `top_gainers_losers_2026-09-17.csv`. Sample output for all four
-datasets (generated from realistic fixture data, since live market data
-is only available during NSE trading hours) is included in `data/`.
+datasets, downloaded live from NSE on 17-18 Sep 2026, is included in
+`data/`.
 
 If `--use-db` is passed, rows are also written into a SQLite database
 (`data/nse_history.db` by default) in a single `dataset_rows` table, so
@@ -230,10 +230,6 @@ The suite (31 tests) covers:
   isolate: both were fixed by editing that one file, with zero changes to
   application code. Same-day CSV overwrite and SQLite cross-run
   de-duplication were also confirmed live, not just in the test suite.
-* NSE's internal API endpoints and JSON field names are not officially
-  documented and can change without notice; if a dataset starts failing
-  again, `config/datasets.yaml` is the first (and likely only) place that
-  needs updating.
 * No data is fetched outside Indian market hours in a special way — the
   tool will still attempt the download and simply save whatever NSE last
   had computed (typically the previous close) on weekends/holidays.
